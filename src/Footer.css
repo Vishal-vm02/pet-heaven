@@ -1,0 +1,25 @@
+/* Footer.css */
+
+.hover-blue:hover {
+  color: #2a96ff !important;
+}
+.footer-area {
+  background-color: #fff;
+  border-top: 1px solid #eee;
+}
+.footer-area a {
+  transition: color 0.2s;
+}
+
+.cursive-text {
+  font-family: "Lucida Handwriting", "Brush Script MT", cursive;
+  font-size: 16px;
+}
+.no-margin {
+  margin: 0;
+}
+
+.no-padding-margin {
+  margin: 0;
+  padding: 0;
+}

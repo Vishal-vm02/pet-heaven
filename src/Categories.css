@@ -1,0 +1,77 @@
+.hero-section {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 10px;
+ 
+  }
+  
+  .intro-card {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    max-width: 45%;
+    margin-left: 30px;
+    margin-bottom: 15px;
+  }
+  
+  .intro-title {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .intro-text {
+    margin-top: 8px;
+    font-size: 1rem;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  @media (max-width: 768px) {
+    .intro-card {
+      max-width: 90%;
+      margin: 0 auto 15px;
+      text-align: center;
+    }
+  
+    .intro-title {
+      font-size: 1.4rem;
+    }
+  
+    .intro-text {
+      font-size: 0.95rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .intro-title {
+      font-size: 1.2rem;
+    }
+  
+    .intro-text {
+      font-size: 0.9rem;
+    }
+  }
+/* Categories.css */
+
+/* For larger screen sizes */
+/* .hero-section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+   */
+  /* For mobile devices, hide background image */
+  @media (max-width: 600px) {
+    .hero-section {
+      background-image: none;
+    }
+  }
+    
