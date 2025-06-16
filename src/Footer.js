@@ -154,7 +154,7 @@ const Footer = () => {
               </li>
               <li style={{ marginBottom: "10px" }}>
                 <a
-                  href="profile-authentication.html"
+                  href="/Profile"
                   className="text-dark text-decoration-none hover-blue"
                 >
                   My Account
