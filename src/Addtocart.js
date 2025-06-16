@@ -20,7 +20,7 @@ import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import { useNavigate } from 'react-router-dom';
 
 const AddToCart = () => {
-  const { cart } = useCart();
+  const { cart, removeFromCart } = useCart();
   const { user } = useAuth();
   const navigate = useNavigate();
   const [error, setError] = useState(false);
@@ -88,7 +88,11 @@ const AddToCart = () => {
                       </TableCell>
                       <TableCell align="center">{pet.description}</TableCell>
                       <TableCell align="center">
-                        <DeleteOutlinedIcon color="error" style={{ cursor: "pointer" }} />
+                        <DeleteOutlinedIcon
+                          color="error"
+                          style={{ cursor: "pointer" }}
+                          onClick={() => removeFromCart(index)}
+                        />
                       </TableCell>
                     </TableRow>
                   ))}

@@ -10,8 +10,12 @@ export const CartProvider = ({ children }) => {
     setCart((prev) => [...prev, item]);
   };
 
+  const removeFromCart = (index) => {
+    setCart((prev) => prev.filter((_, i) => i !== index));
+  };
+
   return (
-    <CartContext.Provider value={{ cart, addToCart }}>
+    <CartContext.Provider value={{ cart, addToCart, removeFromCart }}>
       {children}
     </CartContext.Provider>
   );
